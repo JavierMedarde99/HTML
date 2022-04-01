@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Formulario2</title>    
+  <style>
+      body {
+    font-family: Verdana,sans-serif;
+    font-size: 0.9em;
+    }
+  </style>  
+    </head>
+    <body>
+<form action="">
+<input type="radio" name="genero" id="sr" value="genero" />
+<label for="sr"><strong>SR.</strong></label>
+
+<input type="radio" name="genero" id="sra" value="genero" />
+<label for="sra"><strong>SRa.</strong></label>
+
+<br/>
+<br/>
+
+<label for="nombre"> Nombre/Razón Social</label>
+<input type="text" name="nombre" id="nombre" />
+
+<br/>
+<br/>
+
+<label for="apellidos"> Apellidos*</label>
+<input type="text" name="apellidos" id="apellidos" required />
+
+<br/>
+<br/>
+
+<label for="email"> Email*</label>
+<input type="text" name="email" id="email" required />
+
+<br/>
+<br/>
+
+<label for="contrasenya"> Contraseña*</label>
+<input type="password" name="contrasenya" id="contrasenya" required />
+
+<br/>
+<br/>
+
+<label for="fecha"><strong>FECHA DE NACIMIENTO</strong></label>
+<br/>
+<input type="date" name="fecha" id="fecha" />
+
+<br/>
+<br/>
+
+<label for="dni"> DNI/NIF/NIE*</label>
+<input type="text" name="dni" id="dni" required />
+
+<br/>
+<br/>
+
+<label for="direccion"> Dirrección*</label>
+<input type="text" name="direccion" id="direccion" required />
+
+<br/>
+<br/>
+
+<label for="cp"> Código postal*</label>
+<input type="text" name="cp" id="cp" required pattern="[0-9]{4}"/>
+
+<br/>
+<br/>
+
+<label for="ciudad"> Ciudad*</label>
+<input type="text" name="ciudad" id="ciudad" required />
+
+<br/>
+<br/>
+
+<label for= pais></label>
+<select >
+  <option>España</option>
+</select>
+
+<br/>
+<br/>
+
+<label for= provincia*></label>
+<select required>
+  <option>Barcelona</option>
+</select>
+
+<br/>
+<br/>
+
+<label for="adicional">Informacion adicional</label>
+
+<br/>
+<br/>
+
+<textarea id="adicional"></textarea>
+
+<br/>
+<br/>
+
+<label for="movil"> *Telefono móvil*</label>
+<input type="text" name="movil" id="movil" required pattern="[0-9]{9}"/>
+
+<br/>
+<br/>
+
+<input type="checkbox" name="personal" id="personal" />
+<label for="personal" >Estos datos personales se utilizaran para responder a sus busquedad, proceden autorizar el acceso</label>
+
+<br/>
+<br/>
+
+<input type="submit" name="btnEnviar" value="Iniciar sesión" />
+
+</form>
+    </body>
+</html>

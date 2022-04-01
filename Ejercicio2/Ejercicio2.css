@@ -1,0 +1,47 @@
+div.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+}
+div.medio{
+  display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+}
+header{
+   background-color: tomato;
+}
+
+article{
+    background-color: deepskyblue ;
+}
+.aside-1 {
+    background: gold;
+   
+  }
+  
+  .aside-2 {
+    background: hotpink;
+
+  }
+
+  .footer {
+    background: lightgreen;
+  }
+
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+  }
+
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }

@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 600px) {
+    form{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    form > input#email{
+        border: white 1px solid;
+        border-bottom: grey 1px solid;
+    }
+
+    form > input#email::placeholder{
+        color: black
+    }
+
+    form > input#contrasena{
+        border: white 1px solid;
+        border-bottom: grey 1px solid;
+    }
+
+    form > input#contrasena::placeholder{
+        color: black
+    }
+
+    form >label> input#recuperar{
+         display: none;
+    }
+
+    form > input#enviar{
+        background-color: grey;
+        display: block;
+        width: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        color:lightsalmon;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Practica profesional 4</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <form action="Ejer2Form" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" maxlength="30" placeholder="Nombre" title="Indica el nombre" autofocus />
+
+<br/>
+<br/>
+
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" maxlength="30" placeholder="apellido" title="Indica el apellido" />
+        
+<br/>
+<br/>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" pattern="[0-9]{8} [A-Z]{1}" placeholder="dni" title="Indica el dni" />
+        
+        <br/>
+        <br/>
+        
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" pattern="[0-9]{9}" placeholder="telefono" title="Indica el telefono" required />
+
+                <br/>
+                <br/>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"  placeholder="email@gmail.com" title="Indica el email" required />
+        
+                        <br/>
+                        <br/>
+                        
+                                <label for="numero">Numero favorito del 1 al 10:</label>
+                                <input type="number" id="numero"  max="10" min="1"  />
+
+                                <br/>
+                                <br/>
+                                
+                                        <label for="contraseña">Contraseña:</label>
+                                        <input type="password" id="contraseña"  pattern=".{8,}" />
+
+                                        <br/>
+                                        <br/>
+                                        
+                                                <label for="foto">Foto:</label>
+                                                <input type="file" id="foto"  />
+
+                                        <br/>
+                                        <br/>
+                                        
+                                                <label for="pais">Pais:</label>
+                                               <select name="pais" id="pais">
+                                                   <option value="españa">España</option>
+                                                   <option value="Inglaterra">Inglaterra</option>
+                                                   <option value="alemania">Alemania</option>
+                                                   <option value="francia">Francia</option>
+                                               </select>
+                                                
+                                               <br/>
+                                               <br/>
+                                               <input type="radio" id="hombre" name="sexo" required >
+                                               <label for="hombre">Hombre</label>
+                                               <input type="radio" id="mujer" name="sexo" required >
+                                               <label for="mujer">Mujer</label>  
+
+                                               <br/>
+                                               <br/>
+    
+                                               <label for="comentario">Comentarios:</label>
+                                             <textarea maxlength="126" cols="20" rows="10" id="comentario"></textarea>
+
+                                             
+                                             <br/>
+                                             <br/>
+  
+                                             <label for="suscripcion">Suscripcion:</label>
+                                           <input type="checkbox" id="suscripcion" required>
+
+                                           <label for="datos">Autorizar el uso de datos:</label>
+                                           <input type="checkbox" id="datos" required>
+
+<br/>
+<br/>
+
+                                           <input type="submit" name="btnEnviar" value="Enviar" />
+                                        </form>
+        </body>
+</html>

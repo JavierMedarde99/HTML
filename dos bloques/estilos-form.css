@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: whitesmoke;
+}
+
+nav > ul > li{
+    list-style: none;
+}
+
+nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+nav > ul > li{
+    
+    border-right: 1px solid #9B9A9A;
+    float: left;
+    list-style: none outside none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+  
+}
+
+nav > ul > li#login{
+    border-right:none;
+    align-self: flex-end;
+}
+
+a:link, a:visited, a:active{
+    text-decoration:none;
+    border-radius: 5px;
+   border-bottom: 1px solid grey;
+}

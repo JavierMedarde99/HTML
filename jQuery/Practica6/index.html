@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title> DIW Stradivarius</title>
+	<meta charset="utf-8">
+	<meta content="Escribe tu nombre y apellidos" name="author"/>
+	<meta content="Examen Diseño de Interfaces Web" name="description" />
+	<meta content="examen, diw, stradivarius, diseño web, responsive web design" name="keywords" />
+	<meta name="robots" content="index, follow" />
+	<meta name="lang" content="es-ES" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="jq/jquery-3.6.0.min.js" type="text/javascript"></script>
+		<script src="js/practica3.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<picture>
+			<img id="logo" src="stradivarius.svg" alt="Logo stradivarius">
+		</picture>
+		<!-- Menú principal -->
+		<nav id="menu-principal">
+			<label for="menu-hamburger">
+				<div class="boton">
+					<span>&#9776;</span>
+					
+				</div>
+			</label>  
+			<input type="checkbox" id="menu-hamburger"/> <!--Para la hamburguesa-->
+			<ul id="menu"> 
+				<li><a href="#">NUEVO</a>
+				<li><a href="#">ROPA</a>
+				<li><a href="#">ACCESORIOS</a>
+				<li><a href="#">LIFESTYLE</a>
+				<li><a href="#">ZAPATOS</a>
+				<li><a href="#">THE EVENT PAPER</a>
+				<li><a href="#">TRENDS ALERT</a>
+				<li><a href="#">CAMPAÑA</a>
+			</ul>
+		</nav>
+		<!--Bloque de enlaces con iconos -->
+		<nav id="bloqueiconos">
+			<ul>
+				<li><a href="#"><i class="glyphicon glyphicon-search"></i></a>
+				<li><a href="#"><i class="glyphicon glyphicon-user"></i></a>
+				<li><a href="#"><i class="glyphicon glyphicon-envelope"></i></a>
+				<li><a href="#"><i class="glyphicon glyphicon-heart-empty"></i></a>
+				<li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+			</ul>
+		</nav>
+	</header>
+	<aside>
+		<!--Menú secundario lateral -->
+		
+		<nav id="msecundario">
+			<ul>
+				<li><a href="#">NUEVO</a>
+				<li><a href="#">ROPA</a>
+				<ul>
+					<li><a href="#">Abrigos</a>
+					<li><a href="#">Camisetas</a>
+					<li><a href="#">Vestidos</a>
+					<li><a href="#">Faldas</a>
+					<li><a href="#">Pantalones</a>
+				</ul>
+				<li><a href="#">ACCESORIOS</a>
+				<ul>
+					<li><a href="#">Zapatos</a>
+					<li><a href="#">Bolsos</a>
+					<li><a href="#">Bisutería</a>
+					<li><a href="#">Pañuelos</a>
+				</ul>
+				<li><a href="#">LIFESTYLE</a>
+				<li><a href="#">ZAPATOS</a>
+				<li><a href="#">THE EVENT PAPER</a>
+				<li><a href="#">TRENDS ALERT</a>
+				<li><a href="#">CAMPAÑA</a>
+			</ul>
+		</nav>
+	</aside>
+	<!--Contenido principal con los productos -->
+	<main>
+		<article class="item">
+			<a href="#"><h3>Cazadora bomber</h3></a>
+			<p> 25,95€</p>
+			<a href="#"><picture><img src="bomber1.jpg" alt="Bomber 1"></picture></a>
+		</article>
+		<article class="item">
+			<a href="#"><h3>Bomber fluida estampada</h3></a>
+			<p> 19,95€</p>
+			<a href="#"><picture><img src="bomber2.jpg" alt="Bomber fluida estampada"></picture></a>
+		</article>
+		<article class="item">
+			<a href="#"><h3>Bomber bordada reversible</h3></a>
+			<p> 49,95€</p>
+			<a href="#"><picture><img src="bomber3.jpg" alt="Bomber bordada reversible"></picture></a>
+		</article>
+		<article class="item">
+			<a href="#"><h3>Beisbolera de felpa</h3></a>
+			<p> 15,95€</p>
+			<a href="#"><picture><img src="beisbolera.jpg" alt="Beisbolera de felpa"></picture></a>
+		</article>
+		<article class="item">
+			<a href="#"><h3>Bomber larga bolsillos</h3></a>
+			<p> 35,95€</p>
+			<a href="#"><picture><img src="bomber5.jpg" alt="Bomber larga bolsillos"></picture></a>
+		</article>
+	</main>
+	<!--Pie de página con un menú adicional -->
+	<footer>
+		<nav id="madicional">
+			<ul>
+				<li><a href="#">ATENCIÓN AL CLIENTE</a></li>
+				<li><a href="#">CONTACTO</a></li>
+				<li><a href="#">GUÍA DE COMPRA</a></li>
+				<li><a href="#">TIENDAS</a></li>
+				<li><a href="#">TARJETA REGALO</a></li>
+				<li><a href="#">EMPRESA</a></li>
+				<li><a href="#">AVISO LEGAL</a></li>
+				<li><a href="#">COOKIES</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

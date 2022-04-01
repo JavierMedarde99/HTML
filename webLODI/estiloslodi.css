@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+/*hacemos flexible el body*/
+body {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+/*hacemos flexible el header*/
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/*hacemos desaparecer el boton*/
+input {
+    display: none;
+}
+
+/*hacemos desaparecer la lista*/
+nav#menu-principal>ul>li {
+    display: none;
+}
+
+/*hacemos desaparecer los puntos de la lista*/
+ul>li {
+    list-style: none;
+}
+
+/*hacemos Ordenadmos*/
+header>nav#menu-principal {
+    order: -4;
+}
+
+header>nav#buscador {
+    order: -3;
+}
+
+header>nav#compra {
+    order: -1;
+}
+
+header>picture {
+    order: -2;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+main>article.item {
+    display: flex;
+    width: 48%;
+    margin: 1%;
+    flex-flow: column wrap;
+}
+
+
+main>article.item>a.imagen {
+
+    order: -3;
+}
+
+main>article.item>a.titulo {
+
+    order: -2;
+}
+
+main>article.item>p {
+    order: -1;
+}
+
+main>article>a.imagen>picture>img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer>nav#menu-adicional>ul>li {
+    border-bottom: gray 1px solid;
+}
+
+footer>nav#iconos-sociales {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>nav#iconos-sociales>ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>nav#iconos-sociales>ul>li {
+    margin: 5px;
+
+}

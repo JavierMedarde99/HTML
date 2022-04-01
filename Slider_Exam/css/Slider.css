@@ -1,0 +1,103 @@
+/* SLIDER */
+
+.contenedor-slider {
+	width: 640px;
+	margin: 40px auto 0;
+  }
+  
+  .slider-wrapper {
+	z-index: 500;
+	position: relative;
+	width: 100%;
+	height: 360px;
+	background: #FFF;
+	border: 5px solid #4b5973;
+	overflow: hidden;
+  }
+  
+  .slider-wrapper li {
+	display: none;
+  }
+  
+  .slider-wrapper .current-slide {
+	display: block;
+  }
+  
+  .slider-shadow {
+	width: 100%;
+	height: 15px;
+	position: relative;
+  }
+  
+  .slider-shadow:after,
+  .slider-shadow:before {
+	content: '';
+	position: absolute;
+	background: #171c24;
+	height: 100%;
+	width: 50%;
+	left: 10px;
+	top: -20px;
+	-webkit-transform: rotate(-4deg);
+	-ms-transform: rotate(-4deg);
+	-o-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+	-webkit-box-shadow: 0 0 15px 8px #171c24;
+	box-shadow: 0 0 15px 8px #171c24;
+  }
+  
+  .slider-shadow:before {
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	transform: rotate(4deg);
+  }
+  
+  .slider-wrapper img {
+	position: absolute;
+	max-width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+  }
+  
+  
+  /**
+   * ---[Botones-Control] ---------------------- 
+   **/
+  
+  .control-buttons {
+	margin-top: 15px;
+	text-align: center;
+  }
+  
+  .control-buttons li {
+	cursor: pointer;
+	display: inline-block;
+	background: #424f66;
+	text-indent: -99999px;
+	height: 50px;
+  	width: 50px;
+	margin: 0 6px;
+  }
+
+  .control-buttons li img{
+	display: block;
+	margin-top: 10%;
+  }
+  
+  .control-buttons li.active {
+	background: #00c5b9;
+  }
+  
+  .authors {
+	text-align: center;
+	color: #7a8699;
+	display: block;
+	font-size: 1.6em;
+	font-weight: 300;
+	margin-top: 80px;
+	font-size: 300;
+  }

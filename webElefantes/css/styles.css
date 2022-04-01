@@ -1,0 +1,182 @@
+*{box-sizing: border-box;}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+}
+
+header{
+  display: flex;
+  flex-flow: row wrap ;
+}
+
+header, footer{
+  background-color: #e6e7e8;
+  border: 2px solid #3f3f3f;
+  border-radius: 5px;
+}
+
+footer{
+  color: #3f3f3f;
+  height: 2rem;
+}
+
+header img#logo{
+  width: 5rem;
+  height: 4.35rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Bree Serif', serif;
+  color: #00acdd;
+}
+
+header h1{
+  color: #004166;
+  font-weight: bold;
+}
+
+header h1 span#subject{
+  color: #96bc33;
+}
+
+a{
+  text-decoration: none;
+  cursor:pointer;
+}
+
+a:link{
+  color: #00acdd;
+}
+
+a:visited{
+  color: #ea2126;
+}
+
+a:hover{
+  cursor: pointer;
+  color: #f58a1e;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+nav ul{
+	padding-left: 0;
+}
+
+nav#main-menu{
+  background-color: #004166;
+  font-weight: bold;
+  border: 2px solid #e6e7e8;
+  border-radius: 5px;
+}
+
+main section#principal{
+  border: 2px solid #004166;
+  border-radius: 5px;
+}
+
+main section article.news-art{
+  border: 5px solid #e6e7e8;
+  border-radius: 0.8rem;
+}
+div#content main section#principal article#primerElemento{
+  background-color: #e6e7e8;
+  border-color: #f58a1e;
+}
+
+div#content main section article.news-art img{
+  width: 20rem;
+  height: auto;
+}
+
+div#content main section article.news-art p{
+  padding: 0 1rem;
+}
+
+input{
+  display: none;
+}
+
+@media all and (max-width: 600px) {
+ 
+label{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hamburger:not(:checked) ~ ul{
+  display: none;
+  
+}
+
+}
+
+@media all and (min-width: 600px) and (max-width: 1200px){
+
+article{
+display: flex;
+flex-flow: column wrap;
+
+}
+
+div.medio{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+div.medio p{
+  order : 2;
+} 
+
+label{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hamburger:not(:checked) ~ ul{
+  display: none;
+  
+}
+}
+
+@media all and (min-width: 1200px){
+label{
+  display:none;
+}
+
+ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+section{
+  display: flex;
+  flex-flow: column nowrap;
+  
+  }
+  
+  div.medio{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+
+
+}

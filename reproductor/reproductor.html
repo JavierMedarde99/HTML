@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reproductor.css">
+    <title>reproductor</title>
+</head>
+
+<body>
+    <h1>Morad con Bizarap</h1>
+    <audio id="reproductor" src="music/Morad.mp3" type="audio/mpeg" preload="preload">
+    </audio>
+    <div id="botones">
+        <button id="Play" onclick="empezar()"></button>
+        <button id="Stop" onclick="parar()"></button>
+        <button id="Mas" onclick="masVolumen()"></button>
+        <button id="Menos" onclick="menosVolumen()"></button>
+        <button id="Restart" onclick="reiniciar()"></button>
+    </div>
+    <script src="reproductor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/99.jpg");
+}
+
+ul.polaroids{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+
+ul.polaroids > li{
+    list-style:none;
+    width: 24%; 
+    margin-bottom: 5%;
+}
+
+ul.polaroids > li > a {
+    display: flex;
+    flex-flow: column nowrap; 
+    width: 90%;
+   
+}
+
+ul.polaroids > li > a > img{
+   
+   background-color: white;
+ padding-bottom: 9%;
+   padding-left: 5%;
+   padding-top: 5%;
+   padding-right: 5%;
+   margin-bottom: 0%;
+}
+
+ul.polaroids > li > a > p{ 
+    background-color: white;
+    color: black;
+    margin-top: 0%;
+    text-align:center;
+    padding-bottom: 5%;
+
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+ul.polaroids > li > a.uno {
+    transform: rotate(2deg);
+    transition: width 2s;
+   
+}
+
+ul.polaroids > li > a:hover.uno {
+    transform: rotate(0deg);
+    width: 100%;
+}
+
+ul.polaroids > li > a.dos {
+    transform: rotate(-2deg);
+    transition: width 2s;
+   
+}
+
+ul.polaroids > li > a:hover.dos {
+    transform: rotate(0deg);
+    width: 100%;
+}
+
+ul.polaroids > li > a.tres {
+    transform: rotate(6deg);
+    transition: width 2s;
+   
+}
+
+ul.polaroids > li > a:hover.tres {
+    transform: rotate(0deg);
+    width: 100%;
+}
+
+ul.polaroids > li > a.cuatro {
+    transform: rotate(-6deg);
+    transition: width 2s;
+   
+}
+
+ul.polaroids > li > a:hover.cuatro {
+    transform: rotate(0deg);
+    width: 100%;
+}

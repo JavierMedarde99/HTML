@@ -1,0 +1,9 @@
+body,td,p{
+background-color: white;
+color: black;
+}
+
+.inverso{
+    background-color: black;
+    color: white;  
+}

@@ -1,0 +1,38 @@
+#ofertas{
+display: flex;
+flex-flow: row wrap;
+
+}
+
+article.item-oferta{
+    display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 20px ;
+    margin: 1rem;
+    padding: 2rem;
+   
+}
+article.item-oferta h3{
+order:-2;
+text-align: center;
+}
+img{
+   justify-content: center;
+    flex-shrink: 2;
+    padding: 0px auto;
+    order:-1;
+   
+}
+
+button{
+   
+
+    box-shadow: 2px 2px 10px #666;
+    color:white;
+    background-color: orange;
+    border-color: green;
+    padding: -1rem;
+}
+

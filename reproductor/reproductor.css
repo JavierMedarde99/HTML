@@ -1,0 +1,47 @@
+div#botones{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+button#Play{
+    background-image: url(Img/1486348532-music-play-pause-control-go-arrow_80458.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#Pause{
+    background-image: url(Img/1486348534-music-pause-stop-control-play_80459.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#Stop{
+    background-image: url(Img/1486348809-music-square-stop-play-pause-blue_80470.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#Mas{
+    background-image: url(Img/volume_icon-icons.com_70827.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#Menos{
+    background-image: url(Img/volume_3510.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#Restart{
+    background-image: url(Img/4213447-arrow-load-loading-refresh-reload-restart-sync_115423.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}

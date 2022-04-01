@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 600px) {
+
+
+    body {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /*hacemos desaparecer el boton*/
+    input {
+        display: none;
+    }
+
+    /*hacemos desaparecer la lista*/
+    nav#menu-principal>ul>li {
+        display: none;
+    }
+
+    /*hacemos desaparecer los puntos de la lista*/
+    ul>li {
+        list-style: none;
+    }
+
+
+}

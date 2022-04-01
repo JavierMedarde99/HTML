@@ -1,0 +1,52 @@
+//Ambas líneas son equivalentes
+jQuery('div').remove();
+$('div').remove();
+
+// jQuery: Esconder, ocultar
+$('div').hide(); //Esconde el div
+$('div').show(); //Muestra el div
+
+// Encadenando métodos
+$('div').addClas('error').fadeIn();
+
+// jQuery: Selectors
+$('input'); // selección de un tag
+$('.error'); // selección de una clase
+$('#frmAgregar'); // selección de un id
+$('#frmAgregar input.error'); // podemos mezclarlos
+$('div:animated'); // elementos siendo animados
+$('input[type="text"]'); //atributos de un tag
+$('input[type!="text"]'); //atributos de un tag    (neg.)
+$('input[name*="dob"]'); //el atributo contiene 'dob'
+$('input[name^="dob"]'); //el atributo termina en'dob'
+$('input[name$="dob"]'); //el atributo termina en'dob'
+$('input:checkbox '); // $('input[type="checkbox"]');
+$('input:checked '); // elementos marcados
+$('ul.nav > li'); // selector hijo (inmediato)
+$("div:contains('John')"); // contiene (innerHtml)
+$("tr:even") // pares (empienza en 0)
+$("tr:odd") // impares (empienza en 0)
+$("tr:first"); // primera fila
+$("tr:last"); // primera fila
+$("ul li:nth-child(2)"); // segundo hijo
+
+// jQuery: Attributes
+$("div").addClass('selected'); // agrega la clase
+$("div").removeClass('selected'); // quita la clase
+$("div").hasClass('sel');//tiene clase sel? (booleano)
+$("div").attr('id'); // obtiene el atributo
+$("div").attr('id','nav'); // setea el atributo
+$("div").removeAttr('id'); // quita el atributo
+$("div").html(); // obtiene el html
+$("div").html("Hi"); // setea el html
+$("input#txtEdad").val(); // obtiene el valor
+
+// jQuery: Traversing
+$("div").add("a"); // agrega elementos al selector
+$("li").each(callback); // Itera la seleccion
+$("ul").first(); // devuelve el primero
+$("li.quinto").next(); // devuelve el siguiente
+$("li.sexto").prev(); // devuelve el anterior
+$("a#toc").parent(); // devuelve el padre
+$("a#toc").parents(); // devuelve los padres
+$("a#toc").sibilings(); // devuelve los hermanos

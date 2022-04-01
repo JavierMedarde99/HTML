@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title> Formulario de contacto Desigual</title>
+	<meta charset="utf-8">
+	<meta content="Escribe tu nombre y apellidos" name="author" />
+	<meta content="Formulario de contacto web Desigual" name="description" />
+	<meta content="examen, apliweb, desigual, diseño web, responsive web design" name="keywords" />
+	<meta name="robots" content="index, follow" />
+	<meta name="lang" content="es-ES" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="estilos-form.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<!--<div id="cabecera">-->
+		<picture id="logo-cabecera">
+			<img src="desigual-logo.png" alt="logo desigual">
+		</picture>
+
+		<!--Bloque de enlaces con iconos -->
+		<nav id="bloque-iconos">
+			<ul>
+				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+				<li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+			</ul>
+		</nav>
+		<!--</div>-->
+		<!-- Menú principal -->
+		<nav id="menu-principal">
+			<div id="hamburguesa">
+				<span>&#9776;</span>
+				<span>MENÚ</span>
+			</div>
+			<ul id="menu">
+				<li>
+					<a href="#"><span>REBAJAS</span><span class="mas"> + </span></a>
+					<ul class="submenu">
+						<li> <a href="#"> Vestidos a -50% </a></li>
+						<li> <a href="#"> Complementos a -50% </a></li>
+						<li> <a href="#"> Hombre a -50% </a></li>
+						<li> <a href="#"> Kids a -50% </a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><span>MUJER</span><span class="mas"> + </span></a>
+					<ul class="submenu">
+						<li> <a href="#"> Vestidos </a></li>
+						<li> <a href="#"> Camisetas&Tops </a></li>
+						<li> <a href="#"> Camisas&Blusas</a></li>
+						<li> <a href="#"> Chaquetas&Abrigos</a></li>
+						<li> <a href="#"> Jeans</a></li>
+						<li> <a href="#"> Zapatos&Complementos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><span>HOMBRE</span><span class="mas"> + </span> </a>
+					<ul class="submenu">
+						<li> <a href="#"> Camisas </a></li>
+						<li> <a href="#"> Chaquetas </a></li>
+						<li> <a href="#"> Jerseys</a></li>
+						<li> <a href="#"> Jeans</a></li>
+						<li> <a href="#"> Pantalones</a></li>
+						<li> <a href="#"> Zapatos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><span>KIDS</span><span class="mas"> + </span></a>
+					<ul class="submenu">
+						<li> <a href="#"> Partes de arriba niña </a></li>
+						<li> <a href="#"> Partes de abajo niña </a></li>
+						<li> <a href="#"> Ropa niño </a></li>
+						<li> <a href="#"> Bebé</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><span>HOME DECOR</span><span class="mas"> + </span></a>
+					<ul class="submenu">
+						<li> <a href="#"> Cama </a></li>
+						<li> <a href="#"> Pijamas&Albornoces </a></li>
+						<li> <a href="#"> Baño</a></li>
+						<li> <a href="#"> Deco</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="galeria.html"><span>INSPÍRATE</span><span class="mas"> > </span></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!--Contenido principal con el formulario de contacto -->
+	<main>
+		<section id="form-contacto">
+			<h2>Dinos cosas bonitas</h2>
+			<form id="contacto">
+				<span id="errores"></span>
+				<label for="nombre">Nombre y Apellidos: * </label>
+				<input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido/s *"
+					title="Inserte su nombre y apellido/s" autofocus pattern="^[A-Za-z]*$" required />
+
+				<label for="email">Email: * </label>
+				<input type="text" id="email" name="email" title="Introduzca su correo electrónico"
+					placeholder="Email *" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" required />
+
+
+				<label for="telefno">Teléfono: * </label>
+				<input type="text" id="telefno" name="telefno" title="Introduzca su número de móvil"
+					placeholder="Teléfono *" pattern="^\d{9}$" />
+
+
+				<label for="categoria">Categoría: *</label>
+				<select id="categoria" name="categoria">
+					<option value=''>Seleccione una opción...</option>
+					<option value="ped">Pedidos</option>
+					<option value="dev">Devoluciones</option>
+					<option value="tien">Tienda</option>
+				</select>
+
+				<label for="asunto">Asunto: * </label>
+				<input type="text" id="asunto" name="asunto" title="Introduzca el asunto de su mensaje"
+					placeholder="Asunto *" required />
+
+				<label for="mensaje">Mensaje: * </label>
+				<span id="caracteres">Máximo 100 caracteres</span>
+				<textarea id="mensaje" name="mensaje" rows="10" cols="30" placeholder="Escriba su mensaje..."
+					title="Escriba su mensaje" maxlength="100" required></textarea>
+
+				<input type="button" value="Enviar" name="enviar">
+			</form>
+		</section>
+	</main>
+	<!--Pie de página con un menú adicional -->
+	<footer>
+		<nav id="menu-adicional">
+			<ul>
+				<li><a href="#">AYUDA</a></li>
+				<li><a href="#">POLÍTICA DE PRIVACIDAD</a></li>
+				<li><a href="#">TÉRMINOS Y CONDICIONES</a></li>
+				<li><a href="#">SOBRE NOSOTROS</a></li>
+				<li><a href="#">TRABAJA CON NOSOTROS</a></li>
+				<li><a href="#">MAGAZINE</a></li>
+				<li><a href="#">CONTÁCTANOS</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>

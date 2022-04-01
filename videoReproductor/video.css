@@ -1,0 +1,87 @@
+div#botones {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+button{
+    border:0;
+    margin: 10px;
+}
+
+div#videod{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+button#play {
+    background-image: url(Img/1486348532-music-play-pause-control-go-arrow_80458.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#pause {
+    background-image: url(Img/1486348534-music-pause-stop-control-play_80459.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#stop {
+    background-image: url(Img/1486348809-music-square-stop-play-pause-blue_80470.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#mute {
+    background-image: url(Img/muted.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#nomute {
+    background-image: url(Img/volume_icon-icons.com_70827.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#masrapido{
+    background-image: url(Img/masrapido.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#menosrapido{
+    background-image: url(Img/menosrapido.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#avanzar{
+    background-image: url(Img/avanzar.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#atras{
+    background-image: url(Img/atras.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+button#pantallaComp{
+    background-image: url(Img/completa.png);
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+}

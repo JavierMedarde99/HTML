@@ -1,0 +1,285 @@
+/*Movil*/
+* {
+    box-sizing: border-box;
+}
+
+picture>img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    padding-top: 100px;
+}
+
+a {
+    color: black;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+   
+    left: 0; 
+	top: 0;
+    background-color: white;
+    padding-bottom: 10px;
+    border-bottom: grey 0.5px solid;
+}
+
+header>picture {
+    width: 30%;
+    order: 2;
+}
+
+header>picture>img {
+    width: 100%;
+    height: auto;
+}
+
+header>#menu-principal {
+    order: 1;
+    width: 33%;
+}
+
+header>#menu-principal>span {
+    font-size: 5rem;
+}
+
+header>#menu-principal>#menu-hamburger {
+    display: none;
+}
+
+header>#menu-principal>#menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: -1rem;
+    background-color: white;
+    padding: 2rem 88% 1rem 2.5rem;
+    list-style: none;
+}
+
+header>#menu-principal>#menu-hamburger:checked+ul {
+    display: block;
+}
+
+header>#bloqueiconos {
+    order: 3;
+    width: 33%;
+    
+}
+
+header>#bloqueiconos>ul {
+    display: flex;
+    justify-content: right;
+}
+
+header>#bloqueiconos>ul>li {
+    text-align: right;
+    margin-left: 2rem;
+    list-style: none;
+}
+
+header>#bloqueiconos>ul>li>a {
+    font-size: 4rem;
+    color:grey;
+}
+
+header>#bloqueiconos>ul>li:nth-child(2) {
+    display: none;
+}
+
+header>#bloqueiconos>ul>li:nth-child(3) {
+    display: none;
+}
+
+header>#bloqueiconos>ul>li:nth-child(4) {
+    display: none;
+}
+
+aside {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main>article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 1rem;
+}
+
+main>article>a:first-child {
+    order: 2;
+}
+
+main>article>p {
+    order: 3;
+}
+
+main>article>a:nth-child(1) {
+    order: 1;
+}
+
+footer {
+    padding: 4rem;
+    margin-top: 2rem;
+    background-color: grey;
+}
+
+footer>#madicional>ul {
+    list-style: none;
+    width: 100%;
+}
+
+footer>#madicional>ul>li {
+    text-align: center;
+}
+
+/*Tablet*/
+@media all and (min-width: 650px) and (orientation: landscape) {
+    main>article {
+        flex-basis: 25%;
+    }
+
+    header>#menu-principal>#menu {
+        padding: 2rem 88% 1rem 2.5rem;
+    }
+}
+
+/*Ordenador*/
+@media all and (min-width: 1200px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 200px;
+        
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        border-bottom: grey 0px solid;
+    }
+
+    header>#menu-principal {
+        width: 100%;
+        display: flex;
+        order: 3;
+    }
+
+    header>#menu-principal .boton {
+        display: none;
+    }
+
+    header>#menu-principal>#menu {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        position: relative;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    header>#menu-principal>#menu>li {
+        padding-left: 2rem;
+    }
+
+    .encima{
+        background-color: brown;
+        font-weight: bold;
+    }
+
+    header>picture {
+        width: 10%;
+        order: 1;
+    }
+
+    header>picture>img {
+        width: 100%;
+    }
+
+    header>#bloqueiconos {
+        order: 2;
+        width: 10%;
+    }
+
+    header>#bloqueiconos>ul>li>a {
+        font-size: 2rem;
+        position: relative;
+      
+    }
+
+    header>#bloqueiconos>ul>li:nth-child(2) {
+        display: block;
+    }
+
+    header>#bloqueiconos>ul>li:nth-child(3) {
+        display: block;
+    }
+
+    header>#bloqueiconos>ul>li:nth-child(4) {
+        display: block;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    main>article>a:hover {
+        color: grey;
+    }
+
+    aside {
+        display: block;
+        width: 10%;
+        left: -10px;
+        align-items: center;
+    }
+
+    aside>nav#msecundario>ul {
+        list-style: none;
+    }
+
+    aside>nav#msecundario>ul ul {
+        display: none;
+    }
+
+    aside>nav#msecundario>ul>li:hover>a {
+        color: grey;
+    }
+
+    aside>nav#msecundario>ul>li:hover>ul {
+        display: block;
+        list-style: none;
+    }
+
+    aside>nav#msecundario>ul>li>ul>li:hover>a {
+        color: grey;
+    }
+
+    footer {
+        width: 100%;
+        background-color: whitesmoke;
+    }
+
+    footer>nav#madicional>ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    footer>nav#madicional>ul>li:hover>a {
+        color: grey;
+    }
+}
